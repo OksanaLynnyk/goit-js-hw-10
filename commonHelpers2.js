@@ -1,0 +1,2 @@
+import"./assets/styles-c3df3af9.js";import{i as s}from"./assets/vendor-77e16229.js";const r=document.querySelector(".form");r.addEventListener("submit",e=>{e.preventDefault();const t=+e.currentTarget.elements.delay.value,n=e.currentTarget.elements.state.value;o(t,n).then(()=>l(t)).catch(()=>m(t))});function o(e,t){return new Promise((n,i)=>{setTimeout(()=>{t==="fulfilled"?n():i()},e)})}function l(e){s.success({title:"✅",message:`Fulfilled promise in ${e}ms`})}function m(e){s.warning({title:"❌",message:`Rejected promise in ${e}ms`})}
+//# sourceMappingURL=commonHelpers2.js.map
